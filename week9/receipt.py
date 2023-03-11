@@ -81,6 +81,9 @@ def main():
     except KeyError as error:
         print()
         print(f"Error: unknown product ID in the request.csv {error}")
+    except (FileNotFoundError, PermissionError) as error:
+        print(error)
+        print("Please verify that filename is correct.")
 
 
 def read_dictionary(filename, key_column_index):
