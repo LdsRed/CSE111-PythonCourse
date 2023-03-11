@@ -3,7 +3,11 @@
 def main():
     # Read the contents of a text file
     # named plants.txt into a list.
+<<<<<<< HEAD
     text_list = read_list("C:/Users/erik/Documents/CSE111-PythonCourse/week9/plants.txt")
+=======
+    text_list = read_list("plants.txt")
+>>>>>>> 4548320350e20b0a12d6ae04e79a38abdfb72816
 
     # Print the entire list.
     print(text_list)
